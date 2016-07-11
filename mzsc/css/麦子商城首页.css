@@ -309,7 +309,7 @@ body{
 
 }
 .rbox-fl{
-	min-height: 500px;
+	min-height: 350px;
 	border:1px solid red;
 	border-top:none;
 	padding: 4px;
