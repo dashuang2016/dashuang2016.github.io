@@ -206,6 +206,12 @@ $(function(){
 	})
 	var page=1;
 	$("#exp_timeline a").click(function(){
+		$("#exp_timeline a").each(function(){
+			$(this).css("opacity","0.3");
+			$(this).css("background","gray");
+			$(this).css("borderRadius","50%");
+		});
+		this.style.background="#3ee129";
 		$("#exp_list_content").stop(true,false).animate({left:-$(".exp_list").width()*$(this).index()},2000,"easeInOutCubic");
 		page=$(this).index()+1;
 		});
