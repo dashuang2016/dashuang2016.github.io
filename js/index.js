@@ -222,7 +222,7 @@ $(function(){
 			$(this).css("background","gray");
 			$(this).css("borderRadius","50%");
     		})
-    		$("#exp_timeline a").eq([page]-1).css("background","blue");
+    		$("#exp_timeline a").eq([page]).css("background","#3ee129");
 		if(!$("#exp_list_content").is(":animated")){
 			if(page==1){
 				$("#exp_list_content").animate({left:"+=50"},200,function(){
@@ -240,7 +240,7 @@ $(function(){
 			$(this).css("background","gray");
 			$(this).css("borderRadius","50%");
     		})
-    		$("#exp_timeline a").eq([page]-1).css("background","green");
+    		$("#exp_timeline a").eq([page]).css("background","#3ee129");
 		if(!$("#exp_list_content").is(":animated")){
 			if(page==3){
 				$("#exp_list_content").animate({left:"-=50"},200,function(){
