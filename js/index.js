@@ -205,7 +205,6 @@ $(function(){
 		$("#exp_list_to").stop(true,false).fadeTo(700,0.1);
 	})
 	var page=1;
-	var num=Math.abs(parseInt($("#exp_list_content").css("left")))/900;
 	$("#exp_timeline a").click(function(){
 		$("#exp_timeline a").each(function(){
 			$(this).css("opacity","0.3");
@@ -223,8 +222,7 @@ $(function(){
 			$(this).css("background","gray");
 			$(this).css("borderRadius","50%");
     		})
-		alert(num);
-    		$("#exp_timeline a").eq([num]).css("background","#3ee129");
+//     		$("#exp_timeline a").eq([num]).css("background","#3ee129");
 		if(!$("#exp_list_content").is(":animated")){
 			if(page==1){
 				$("#exp_list_content").animate({left:"+=50"},200,function(){
@@ -237,13 +235,13 @@ $(function(){
 		}
 	});
 	$("#exp_list_toright").click(function(){
-		alert(num);
+		
 		$("#exp_timeline a").each(function(){
     			$(this).css("opacity","0.3");
 			$(this).css("background","gray");
 			$(this).css("borderRadius","50%");
     		})
-    		$("#exp_timeline a").eq([num]).css("background","#3ee129");
+//     		$("#exp_timeline a").eq([num]).css("background","#3ee129");
 		if(!$("#exp_list_content").is(":animated")){
 			if(page==3){
 				$("#exp_list_content").animate({left:"-=50"},200,function(){
