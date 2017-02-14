@@ -217,6 +217,12 @@ $(function(){
 		});
 	$("#exp_list_toleft").click(function()
     {
+		$("#exp_timeline a").each(function(){
+    			$(this).css("opacity","0.3");
+			$(this).css("background","gray");
+			$(this).css("borderRadius","50%");
+    		})
+    		$("#exp_timeline a").eq([page]-1).css("background","blue");
 		if(!$("#exp_list_content").is(":animated")){
 			if(page==1){
 				$("#exp_list_content").animate({left:"+=50"},200,function(){
@@ -229,6 +235,12 @@ $(function(){
 		}
 	});
 	$("#exp_list_toright").click(function(){
+		$("#exp_timeline a").each(function(){
+    			$(this).css("opacity","0.3");
+			$(this).css("background","gray");
+			$(this).css("borderRadius","50%");
+    		})
+    		$("#exp_timeline a").eq([page]-1).css("background","green");
 		if(!$("#exp_list_content").is(":animated")){
 			if(page==3){
 				$("#exp_list_content").animate({left:"-=50"},200,function(){
