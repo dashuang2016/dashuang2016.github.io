@@ -223,6 +223,7 @@ $(function(){
 			$(this).css("background","gray");
 			$(this).css("borderRadius","50%");
     		})
+		alert(num);
     		$("#exp_timeline a").eq([num]).css("background","#3ee129");
 		if(!$("#exp_list_content").is(":animated")){
 			if(page==1){
@@ -236,6 +237,7 @@ $(function(){
 		}
 	});
 	$("#exp_list_toright").click(function(){
+		alert(num);
 		$("#exp_timeline a").each(function(){
     			$(this).css("opacity","0.3");
 			$(this).css("background","gray");
